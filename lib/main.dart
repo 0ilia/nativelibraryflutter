@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
     _req = "https://10.0.2.2:3000";
     var response = await http.get(_req);
     setState(() {
-      _res = response.statusCode as String;
+      _res = response.body;
     });
 
   }
